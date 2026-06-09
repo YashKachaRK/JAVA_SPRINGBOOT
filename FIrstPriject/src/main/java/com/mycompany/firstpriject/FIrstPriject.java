@@ -5,22 +5,26 @@ package com.mycompany.firstpriject;
 
 import com.mycompany.emp.*;
 
-class Animal {
+// run time polymorphism
+class A {
 
-    void eat() {
-        System.out.println("Animal Eating");
+    int age;
+    String name;
+
+    void show(int a) {
+        age = a;
+        System.out.println(age);
     }
+
 }
 
-class Dog extends Animal {
+class B extends A {
 
-    void eat() {
-        System.out.println("Dog Eating");
-    }
-
-    void display() {
-        super.eat();
-        eat();
+    void show(int a , String n) {
+        age  = a;
+        name = n;
+        System.out.println(age + name);
+//        System.out.println("CLass B");
     }
 }
 
@@ -28,8 +32,9 @@ public class FIrstPriject {
 
     public static void main(String[] args) {
 
-        Dog dog = new Dog();
-        dog.display();
+        B obj = new B();
+        obj.show(23 );
+
     }
 
 }
