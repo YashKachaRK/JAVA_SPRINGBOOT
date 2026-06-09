@@ -3,30 +3,21 @@
  */
 package com.mycompany.firstpriject;
 
-import java.util.Scanner;
+import com.mycompany.emp.*;
 
-class Person {
-
-    private int age;
-
-    void setAge(int age) {
-        this.age = age;
-    }
-
-    int getAge() {
-        return age;
-    }
-
+class Age extends Employe {
+    protected String fname  = "Kacha";
 }
 
 public class FIrstPriject {
 
     public static void main(String[] args) {
 
-        Person p = new Person();
-        p.setAge(25);
-        System.out.println(p.getAge());
-
+        Age a = new Age();
+        a.name = "Yash";
+        a.salary = 2500;
+        System.out.println(a.fname);
+        a.display();
     }
 
 }
