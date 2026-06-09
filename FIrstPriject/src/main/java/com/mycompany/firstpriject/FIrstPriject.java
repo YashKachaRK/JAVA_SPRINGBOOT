@@ -3,6 +3,7 @@
  */
 
 package com.mycompany.firstpriject;
+import java.util.Scanner;
 
 /**
  *
@@ -11,7 +12,10 @@ package com.mycompany.firstpriject;
 public class FIrstPriject {
 
     public static void main(String[] args) {
-        
+        Scanner sc  = new Scanner(System.in);
+        System.out.println("Enter Your name");
+        String a  = sc.nextLine();
+        System.out.println(a);
     }
 }
 
