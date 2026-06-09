@@ -5,19 +5,31 @@ package com.mycompany.firstpriject;
 
 import com.mycompany.emp.*;
 
-class Age extends Employe {
-    protected String fname  = "Kacha";
+class Animal {
+
+    void eat() {
+        System.out.println("Animal Eating");
+    }
+}
+
+class Dog extends Animal {
+
+    void eat() {
+        System.out.println("Dog Eating");
+    }
+
+    void display() {
+        super.eat();
+        eat();
+    }
 }
 
 public class FIrstPriject {
 
     public static void main(String[] args) {
 
-        Age a = new Age();
-        a.name = "Yash";
-        a.salary = 2500;
-        System.out.println(a.fname);
-        a.display();
+        Dog dog = new Dog();
+        dog.display();
     }
 
 }
