@@ -11,6 +11,8 @@ package com.mycompany.firstpriject;
 public class FIrstPriject {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        
     }
 }
+
+
