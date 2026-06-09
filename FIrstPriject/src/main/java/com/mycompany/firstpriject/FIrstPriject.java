@@ -3,38 +3,36 @@
  */
 package com.mycompany.firstpriject;
 
-import com.mycompany.emp.*;
+abstract class A {
 
-// run time polymorphism
-class A {
-
-    int age;
-    String name;
-
-    void show(int a) {
-        age = a;
-        System.out.println(age);
+    A() {
+        System.out.println("Parent coustructor");
     }
 
+    abstract void show(); // abstact class ni body no hoi without body j hoi
+
+    abstract void display();
 }
 
 class B extends A {
+    B(){
+        super();
+        System.out.println("Child class");
+    }
+    public void show() {
+        System.out.println("Hey!! ");
+    }
 
-    void show(int a , String n) {
-        age  = a;
-        name = n;
-        System.out.println(age + name);
-//        System.out.println("CLass B");
+    public void display() {
+        System.out.println("DIsplay ");
     }
 }
 
 public class FIrstPriject {
 
     public static void main(String[] args) {
-
         B obj = new B();
-        obj.show(23 );
-
+        obj.show();
     }
 
 }
