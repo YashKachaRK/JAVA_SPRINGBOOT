@@ -44,6 +44,26 @@ public class ArrayList_learn {
 
 
 //        get array list size
-        System.out.println("Array list size: "+ list.size());
+        System.out.println("Array list size: " + list.size());
+
+
+        // arraylist in custom object
+
+
+        ArrayList<Studennt> std = new ArrayList<>();
+
+        std.add(new Studennt(1, "Yash"));
+
+        System.out.println(std);
+    }
+}
+
+class Studennt {
+    int id;
+    String name;
+
+    Studennt(int id, String name) {
+        this.id = id;
+        this.name = name;
     }
 }
