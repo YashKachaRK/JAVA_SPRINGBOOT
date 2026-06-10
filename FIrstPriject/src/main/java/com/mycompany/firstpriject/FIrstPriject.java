@@ -3,36 +3,48 @@
  */
 package com.mycompany.firstpriject;
 
-interface A{
-    int num = 2;
-    void show(); // by defult public j hoi 
-    // interace no object no banavi sake;
-    
-    default void run(){
-        System.out.println("Run");
-    }// using defult apade ahiya j body api saki chhi
-    
-}
-interface  C {
-    void display();
-}
-// interface mate implements no use thay chhe
-class B implements A , C{
-    public void show (){
-        System.out.println("Show");
-    }
-    public void display(){
-        System.out.println("Class B");
+import java.io.IOException;
+
+class Text {
+
+    void readFile() throws IOException {
+        throw new IOException("File not found");
     }
 }
 
 public class FIrstPriject {
 
     public static void main(String[] args) {
-       B b = new B();
-       b.show();
-       b.display();
-       b.run(); 
+        // exception handling 
+//        try {
+//
+//            int a = 0;
+//            int b = 9;
+//            System.out.println(b / a);
+//        } catch (ArithmeticException e) {
+//            System.out.println("Connot divide by 0");
+//        } finally {
+//            System.out.println("Program end  ");
+//
+//        }
+
+        // throw keyqord
+//            
+//            int age = 15;
+//            
+//            if(age < 18 ){
+//                throw new ArithmeticException("Not Eligible");
+//            }
+// throws
+        Text t = new Text();
+
+        try {
+            t.readFile();
+
+        }catch (IOException e ){
+            System.out.println(e.getMessage());
+        }
+
     }
 
 }
