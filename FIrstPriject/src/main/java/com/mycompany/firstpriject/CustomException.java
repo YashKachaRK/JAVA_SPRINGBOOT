@@ -4,6 +4,8 @@
  */
 package com.mycompany.firstpriject;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 /**
@@ -13,26 +15,10 @@ import java.util.Scanner;
 public class CustomException {
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter Age");
-        int age = sc.nextInt();
-        try {
-            if (age < 18) {
-                throw new MyException();
-
-            }
-            System.out.println("DOne");
-
-        } catch (MyException ex) {
-            System.out.println(ex);
-        }
+        List<Integer> list = new ArrayList<>();
+        
+        list.add(10);
+        System.out.println(list);
     }
 }
 
-class MyException extends Exception {
-
-    public MyException() {
-        super("Age must be above than 18");
-    }
-
-}

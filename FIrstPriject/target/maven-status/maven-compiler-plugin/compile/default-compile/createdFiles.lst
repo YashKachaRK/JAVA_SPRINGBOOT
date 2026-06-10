@@ -1,5 +1,3 @@
 com\mycompany\emp\Employe.class
-com\mycompany\firstpriject\CustomException.class
 com\mycompany\firstpriject\FIrstPriject.class
-com\mycompany\firstpriject\MyException.class
-com\mycompany\firstpriject\Text.class
+com\mycompany\firstpriject\CustomException.class
