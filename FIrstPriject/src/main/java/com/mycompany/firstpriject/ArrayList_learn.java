@@ -12,6 +12,18 @@ public class ArrayList_learn {
         list.add(2);
         list.add(3);
         list.add(202);
+        list.add(202);
+        list.add(202);
+        list.add(202);
+        list.add(202);
+        list.add(202);
+        list.add(202);
+        list.add(202);
+        list.add(202);
+        list.add(202);
+        list.add(202);
+        list.add(202);
+        list.add(202);
 
 
         System.out.println(list);
