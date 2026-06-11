@@ -11,19 +11,7 @@ public class ArrayList_learn {
         list.add(1);
         list.add(2);
         list.add(3);
-        list.add(202);
-        list.add(202);
-        list.add(202);
-        list.add(202);
-        list.add(202);
-        list.add(202);
-        list.add(202);
-        list.add(202);
-        list.add(202);
-        list.add(202);
-        list.add(202);
-        list.add(202);
-        list.add(202);
+
 
 
         System.out.println(list);
@@ -62,20 +50,8 @@ public class ArrayList_learn {
         // arraylist in custom object
 
 
-        ArrayList<Studennt> std = new ArrayList<>();
 
-        std.add(new Studennt(1, "Yash"));
-
-        System.out.println(std);
     }
 }
 
-class Studennt {
-    int id;
-    String name;
 
-    Studennt(int id, String name) {
-        this.id = id;
-        this.name = name;
-    }
-}
