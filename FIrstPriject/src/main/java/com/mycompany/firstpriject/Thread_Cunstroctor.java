@@ -16,8 +16,11 @@ class Mythr extends Thread {
 public class Thread_Cunstroctor {
     public static void main(String[] args) {
         Mythr t = new Mythr("Yash");
+        Mythr t1 = new Mythr("Gracy");
         t.start();
+        t1.start();
         System.out.println(t.getName());
-        System.out.println("Thread is id :- "+ t.getId());
+        System.out.println("Thread is id :- " + t.getId());
+        System.out.println("Thread is id t1:- " + t1.getId());
     }
 }
