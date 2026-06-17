@@ -152,7 +152,7 @@ public class studentManagemnt {
                     if (std.isEmpty()) {
                         System.out.println("No Students Found!");
                     } else {
-                        student topper = std.get(0);
+                        student topper = std.getFirst();
                         for (student s : std){
                             if (s.marks > topper.marks){
                                 topper  = s;
