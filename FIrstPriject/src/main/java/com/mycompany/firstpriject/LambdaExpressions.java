@@ -4,7 +4,7 @@ package com.mycompany.firstpriject;
 import java.lang.classfile.Interfaces;
 
 interface Demo {
-    void math1();
+    void math1(int a);
 }
 
 public class LambdaExpressions {
@@ -20,8 +20,12 @@ public class LambdaExpressions {
 //        obj.math1();
 
 
+        // Lambda
+        Demo g = (a) -> System.out.println("Demo"+a);
+        g.math1(6);
 
-        
+
+
 
     }
 }
